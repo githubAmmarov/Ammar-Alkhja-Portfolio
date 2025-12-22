@@ -1,6 +1,6 @@
 export const portfolioData = {
   personal: {
-    name: "Ammar Alkhja",
+    name: "Mohammad Ammar Alkhja",
     title: "Backend Developer | Full-Stack Developer",
     email: "Ammoooralkhja@gmail.com",
     phone: "+963995867181",
@@ -71,18 +71,13 @@ export const portfolioData = {
         category: "Database",
       },
       {
-        name: "SQL Server",
-        icon: "https://www.microsoft.com/favicon.ico",
-        category: "Database",
-      },
-      {
         name: "Git",
         icon: "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png",
         category: "Tools",
       },
       {
-        name: "Python",
-        icon: "https://www.python.org/static/community_logos/python-logo.png",
+        name: "NestJS",
+        icon: "https://nestjs.com/img/logo-small.svg",
         category: "Backend",
       },
       {
@@ -102,9 +97,9 @@ export const portfolioData = {
         "Led the customization and implementation of ERPNext to streamline operations and meet the specific business needs of the innovation center.",
         "Customized core modules (e.g., HR, Projects, Inventory) by modifying DocTypes, scripts, and workflows to enhance functionality and user experience.",
         "Designed and developed new custom modules from scratch to address unique operational requirements not covered by the standard system.",
-        "Gained deep, hands-on experience with the Frappe framework, Python, and JavaScript to deliver a tailored ERP solution that improved organizational efficiency.",
+        "Gained deep, hands-on experience with the Frappe framework, NestJS, and JavaScript to deliver a tailored ERP solution that improved organizational efficiency.",
       ],
-      technologies: ["ERPNext", "Frappe", "Python", "JavaScript"],
+      technologies: ["ERPNext", "Frappe", "NestJS", "JavaScript"],
     },
   ],
 

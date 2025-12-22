@@ -27,9 +27,9 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 pb-10 md:pt-0">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-32 md:pt-40 pb-10 md:pb-20">
       {/* Gradient background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-purple-50 to-blue-50 -z-10" />
+      <div className="absolute inset-0 bg-background -z-10" />
 
       {/* Animated gradient orbs */}
       <div className="absolute top-20 left-10 w-72 h-72 bg-blue-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob -z-10" />
@@ -44,9 +44,9 @@ export default function HeroSection() {
           animate="visible"
         >
           {/* Profile Image Placeholder or Avatar */}
-          <motion.div variants={itemVariants} className="mb-8">
-            <div className="w-32 h-32 md:w-40 md:h-40 mx-auto rounded-full bg-gradient-to-br from-blue-400 to-purple-600 p-1 shadow-2xl hover-lift">
-              <div className="w-full h-full rounded-full bg-white flex items-center justify-center text-4xl font-bold gradient-text">
+          <motion.div variants={itemVariants} className="mb-12 md:mb-16">
+            <div className="w-40 h-40 md:w-56 md:h-56 mx-auto rounded-full bg-gradient-to-br from-blue-600 to-purple-600 p-1 shadow-2xl hover-lift">
+              <div className="w-full h-full rounded-full bg-card flex items-center justify-center text-5xl md:text-7xl font-bold gradient-text">
                 AA
               </div>
             </div>
@@ -55,7 +55,7 @@ export default function HeroSection() {
           {/* Name */}
           <motion.h1
             variants={itemVariants}
-            className="text-4xl md:text-6xl font-bold mb-4 gradient-text"
+            className="text-5xl md:text-7xl font-bold mb-4 gradient-text"
           >
             {personal.name}
           </motion.h1>
@@ -63,7 +63,7 @@ export default function HeroSection() {
           {/* Title */}
           <motion.p
             variants={itemVariants}
-            className="text-xl md:text-2xl text-blue-600 font-semibold mb-6"
+            className="text-xl md:text-3xl text-blue-600 dark:text-blue-400 font-semibold mb-6"
           >
             {personal.title}
           </motion.p>
@@ -71,7 +71,7 @@ export default function HeroSection() {
           {/* Summary */}
           <motion.p
             variants={itemVariants}
-            className="text-lg text-gray-600 max-w-2xl mx-auto mb-8 leading-relaxed"
+            className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-8 leading-relaxed"
           >
             {personal.summary}
           </motion.p>

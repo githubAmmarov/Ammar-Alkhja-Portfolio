@@ -34,3 +34,11 @@
 - [x] All tests passing (15 tests)
 - [x] TypeScript compilation successful
 - [x] Dev server running without errors
+
+## التعديلات المطلوبة
+- [x] تحسين عرض الصورة الشخصية وإضافة padding للـ Hero Section
+- [x] تغيير الاسم إلى Mohammad Ammar Alkhja
+- [x] تطبيق Dark Theme على الموقع
+- [x] إضافة أيقونات React و TypeScript و MySQL الرسمية
+- [x] استبدال Python بـ NestJS
+- [ ] نشر الموقع على GitHub Pages

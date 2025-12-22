@@ -4,7 +4,7 @@ import { portfolioData } from "@/data/portfolio";
 describe("Portfolio Data", () => {
   describe("Personal Information", () => {
     it("should have valid personal data", () => {
-      expect(portfolioData.personal.name).toBe("Ammar Alkhja");
+      expect(portfolioData.personal.name).toBe("Mohammad Ammar Alkhja");
       expect(portfolioData.personal.title).toBe("Backend Developer | Full-Stack Developer");
       expect(portfolioData.personal.email).toBe("Ammoooralkhja@gmail.com");
       expect(portfolioData.personal.github).toBe("https://github.com/githubAmmarov");

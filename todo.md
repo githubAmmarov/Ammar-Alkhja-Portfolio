@@ -42,3 +42,8 @@
 - [x] إضافة أيقونات React و TypeScript و MySQL الرسمية
 - [x] استبدال Python بـ NestJS
 - [ ] نشر الموقع على GitHub Pages
+
+## مهام النشر
+- [x] إضافة الصورة الشخصية الرسمية
+- [ ] نشر على GitHub Pages
+- [ ] نشر على Manus

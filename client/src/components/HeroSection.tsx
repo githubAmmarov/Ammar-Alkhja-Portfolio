@@ -43,12 +43,14 @@ export default function HeroSection() {
           initial="hidden"
           animate="visible"
         >
-          {/* Profile Image Placeholder or Avatar */}
+          {/* Profile Image */}
           <motion.div variants={itemVariants} className="mb-12 md:mb-16">
-            <div className="w-40 h-40 md:w-56 md:h-56 mx-auto rounded-full bg-gradient-to-br from-blue-600 to-purple-600 p-1 shadow-2xl hover-lift">
-              <div className="w-full h-full rounded-full bg-card flex items-center justify-center text-5xl md:text-7xl font-bold gradient-text">
-                AA
-              </div>
+            <div className="w-40 h-40 md:w-56 md:h-56 mx-auto rounded-full bg-gradient-to-br from-blue-600 to-purple-600 p-1 shadow-2xl hover-lift overflow-hidden">
+              <img
+                src="/profile.jpg"
+                alt="Mohammad Ammar Alkhja"
+                className="w-full h-full rounded-full object-cover"
+              />
             </div>
           </motion.div>
 

@@ -25,7 +25,7 @@ export default function SkillsSection() {
   };
 
   return (
-    <section id="skills" className="py-20 md:py-32 bg-gradient-to-br from-blue-50 via-purple-50 to-blue-50">
+    <section id="skills" className="py-20 md:py-32 bg-background">
       <div className="container">
         <motion.div
           className="max-w-6xl mx-auto"
@@ -39,7 +39,7 @@ export default function SkillsSection() {
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
               <span className="gradient-text">Skills & Technologies</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
               A comprehensive overview of the tools and technologies I use to
               build modern, scalable web applications
             </p>
@@ -55,16 +55,16 @@ export default function SkillsSection() {
               <motion.div
                 key={index}
                 variants={itemVariants}
-                className="p-8 rounded-xl bg-white shadow-md hover-lift border border-gray-100"
+                className="p-8 rounded-xl bg-card shadow-md hover-lift border border-border dark:border-border"
               >
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">
+                <h3 className="text-2xl font-bold text-foreground mb-6">
                   {skillGroup.category}
                 </h3>
                 <div className="flex flex-wrap gap-3">
                   {skillGroup.items.map((item, idx) => (
                     <Badge
                       key={idx}
-                      className="px-4 py-2 bg-gradient-to-r from-blue-100 to-purple-100 text-gray-900 font-medium hover:shadow-md transition-all duration-300 cursor-default"
+                      className="px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-medium hover:shadow-md transition-all duration-300 cursor-default"
                     >
                       {item}
                     </Badge>
@@ -76,7 +76,7 @@ export default function SkillsSection() {
 
           {/* Technology Icons Grid */}
           <motion.div variants={itemVariants} className="mb-16">
-            <h3 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+            <h3 className="text-3xl font-bold text-foreground mb-8 text-center">
               Technology Stack
             </h3>
             <motion.div
@@ -87,10 +87,10 @@ export default function SkillsSection() {
                 <motion.div
                   key={index}
                   variants={itemVariants}
-                  className="flex flex-col items-center justify-center p-6 rounded-lg bg-white shadow-md hover-lift group"
+                  className="flex flex-col items-center justify-center p-6 rounded-lg bg-card shadow-md hover-lift group border border-border"
                   whileHover={{ scale: 1.05 }}
                 >
-                  <div className="w-16 h-16 mb-4 rounded-lg bg-gradient-to-br from-blue-100 to-purple-100 flex items-center justify-center group-hover:shadow-lg transition-all duration-300 overflow-hidden">
+                  <div className="w-16 h-16 mb-4 rounded-lg bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center group-hover:shadow-lg transition-all duration-300 overflow-hidden">
                     <img
                       src={tech.icon}
                       alt={tech.name}
@@ -101,10 +101,10 @@ export default function SkillsSection() {
                       }}
                     />
                   </div>
-                  <p className="text-center font-semibold text-gray-900 text-sm mb-2">
+                  <p className="text-center font-semibold text-foreground text-sm mb-2">
                     {tech.name}
                   </p>
-                  <span className="text-xs text-gray-500 bg-gray-100 px-2 py-1 rounded">
+                  <span className="text-xs text-muted-foreground bg-muted px-2 py-1 rounded">
                     {tech.category}
                   </span>
                 </motion.div>
@@ -113,18 +113,18 @@ export default function SkillsSection() {
           </motion.div>
 
           {/* Soft Skills */}
-          <motion.div variants={itemVariants} className="p-8 rounded-xl bg-white shadow-md border border-gray-100">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">
+          <motion.div variants={itemVariants} className="p-8 rounded-xl bg-card shadow-md border border-border">
+            <h3 className="text-2xl font-bold text-foreground mb-6">
               Soft Skills
             </h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {skills.softSkills.map((skill, idx) => (
                 <motion.div
                   key={idx}
-                  className="p-4 rounded-lg bg-gradient-to-br from-blue-50 to-purple-50 text-center hover-lift"
+                  className="p-4 rounded-lg bg-muted text-center hover-lift border border-border"
                   whileHover={{ scale: 1.05 }}
                 >
-                  <p className="text-gray-900 font-medium">{skill}</p>
+                  <p className="text-foreground font-medium">{skill}</p>
                 </motion.div>
               ))}
             </div>
